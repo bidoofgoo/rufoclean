@@ -12,4 +12,9 @@ class product extends Model
     public function besteldeProducten(){
       return $this.hasMany('App\besteldProduct', 'product_id', 'id');
     }
+
+    public $timestamps = false;
+    protected $fillable = [
+        'name'
+    ];
 }

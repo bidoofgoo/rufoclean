@@ -16,7 +16,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <button onclick="location.href='item/create'" class="btn btn-dark">Bestelling maken</button>
+                    <button onclick="location.href='bestellingMaken'" class="btn btn-dark">Bestelling maken</button>
                 </div>
             </div>
         </div>

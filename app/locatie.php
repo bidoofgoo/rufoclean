@@ -12,3 +12,13 @@ class locatie extends Model
     public function bestellingen(){
       return $this.hasMany('App\bestellingen', 'locatie_id', 'id');
     }
+
+    public $timestamps = false;
+    protected $fillable = [
+        'name'
+    ];
+
+    protected $casts = [
+      'id' => 'string'
+   ];
+}

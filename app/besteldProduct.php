@@ -10,10 +10,12 @@ class besteldProduct extends Model
     protected $table = 'besteldProduct';
 
     public function producten(){
-      return $this.hasOne('App\product', 'product_id', 'id');
+      return $this->hasOne('App\product', 'id', 'product_id');
     }
 
     public function bestellingen(){
-      return $this.hasOne('App\bestellingen', 'bestelling_id', 'id');
+      return $this->hasOne('App\bestellingen', 'id', 'bestelling_id');
     }
+
+    public $timestamps = false;
 }
