@@ -1,0 +1,35 @@
+body {
+  background-image: url('/img/background.png');
+  background-size: cover;
+}
+
+.card-header {
+  background-color: #984B43;
+  color: white;
+}
+
+#info {
+  min-height: 100%;
+  font-size: 1.05em;
+}
+
+.btn {
+
+}
+
+#floatright {
+  float: right;
+}
+
+h3 {
+  max-width: 50%;
+  float: left;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 1em;
+}
+
+li:nth-child(even) {background: #CCC}
